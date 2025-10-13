@@ -1,0 +1,265 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    height: 100vh;
+}
+
+header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Greeting Section */
+.greeting {
+    grid-column: 1 / span 2;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.greeting h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.greeting p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+/* Chatbox */
+.chatbox {
+    grid-column: 1;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 15px;
+    width: 90%;
+    height: 165%;
+    color: var(--text-color);
+}
+
+.chat-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: var(--input-bg);
+    color: var(--text-color);
+}
+
+.chat-input button {
+    margin-left: 10px;
+    border: none;
+    background: var(--button-bg);
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.chat-message {
+    margin-top: 15px;
+    background: var(--message-bg);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: fit-content;
+}
+
+/* Flashcards */
+.flashcards {
+    grid-column: 2;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 15px;
+    color: var(--text-color);
+}
+
+.flashcard {
+    text-align: center;
+    margin-top: 15px;
+    background: var(--flashcard-bg);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.flashcard button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background: var(--button-bg);
+    color: white;
+    cursor: pointer;
+}
+
+/* Activity Graph */
+.activity {
+    grid-column: 3 / span 2;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 15px;
+    color: var(--text-color);
+}
+
+.activity-graph {
+    position: relative;
+    height: 150px;
+    background: var(--graph-bg);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Progress Circle */
+.progress {
+    grid-column: 3;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.progress-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.progress-circle svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.progress-circle circle {
+    fill: none;
+    stroke-width: 10;
+    stroke: var(--progress-bg);
+    stroke-linecap: round;
+}
+
+.progress-circle circle:nth-child(2) {
+    stroke: var(--progress-fill);
+    stroke-dasharray: 283;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress-text span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Deadlines */
+.deadlines {
+    grid-column: 1 / span 2;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 15px;
+    color: var(--text-color);
+}
+
+.deadlines ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.deadlines li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* To-Do List */
+.todo {
+    grid-column: 4;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 15px;
+    color: var(--text-color);
+}
+
+.todo ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.todo li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.todo input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Themes */
+.dark-theme {
+    --card-bg: #222;
+    --text-color: #fff;
+    --input-bg: #333;
+    --button-bg: #444;
+    --message-bg: #333;
+    --flashcard-bg: #3a3a3a;
+    --graph-bg: #111;
+    --progress-bg: #444;
+    --progress-fill: #00ced1;
+    --border-color: #444;
+    background: #121212;
+    color: #fff;
+}
+
+.light-theme {
+    --card-bg: #f0f0f0;
+    --text-color: #333;
+    --input-bg: #e0e0e0;
+    --button-bg: #007BFF;
+    --message-bg: #e9e9e9;
+    --flashcard-bg: #d0d0d0;
+    --graph-bg: #e0e0e0;
+    --progress-bg: #d0d0d0;
+    --progress-fill: #00ced1;
+    --border-color: #ccc;
+    background: #f9f9f9;
+    color: #333;
+}

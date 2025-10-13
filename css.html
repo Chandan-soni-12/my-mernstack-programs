@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector</title>
+    <style>
+        div p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Descendant Selector Example</h2>
+    <div>
+        <p>This paragraph is inside a div and will have a yellow background.</p>
+        <p>This is another paragraph inside the same div.</p>
+        <section>
+            <p>This paragraph is inside a section within the div and will also have a yellow background.</p>
+        </section>
+        <p>This paragraph is outside the section but still inside the div.</p>
+    </div>
+    <p>This paragraph is outside the div and will not have a yellow background.</p>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorx Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <header>
+            <h1>Mentorx</h1>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </header>
+
+        <div class="greeting">
+            <h2>Hi,<br>Bhardwaj</h2>
+            <p>Streak: 4 days</p>
+        </div>
+
+        <div class="chatbox">
+            <div class="chat-header">
+                <h3>Ira</h3>
+            <div class="chat-message">
+                <p>Hi</p>
+            </div>
+            <div class="chat-message">
+                <p>Hello, How can I assist you today?</p>
+            </div><br><br>me
+                <div class="chat-input">
+                    <input type="text" placeholder="Hii...">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="flashcards">
+            <h3>⚡ FlashCards</h3>
+            <div class="flashcard">
+                <h4>Mathematics</h4>
+                <p>Reviewed 85 / 200 cards</p>
+                <button>Start Revising</button>
+            </div>
+        </div>
+
+        <div class="activity">
+            <h3>Activity</h3>
+            <div class="activity-graph">
+                <canvas id="activityChart"></canvas>
+                <p>109hrs<br><small>This month</small></p>
+            </div>
+        </div>
+
+        <div class="progress">
+            <h3>Overall Progress</h3>
+            <div class="progress-circle">
+                <svg>
+                    <circle cx="50" cy="50" r="45"></circle>
+                    <circle cx="50" cy="50" r="45" style="stroke-dashoffset: calc(283 - (283 * 68) / 100);"></circle>
+                </svg>
+                <div class="progress-text">
+                    <span>68%</span>
+                    <p>You're <strong>68%</strong> on track this week!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="deadlines">
+            <h3>Deadlines</h3>
+            <ul>
+                <li>Maths assignment <span>Due today</span></li>
+                <li>Practice Quiz <span>Due today</span></li>
+                <li>Add Flashcards <span>Completed</span></li>
+            </ul>
+        </div>
+
+        <div class="todo">
+            <h3>To-Do List</h3>
+            <ul>
+                <li><input type="checkbox"> Review Flashcards</li>
+                <li><input type="checkbox"> Take Quiz</li>
+                <li><input type="checkbox"> Upcoming exam</li>
+                <li><input type="checkbox"> Add Tasks</li>
+                <li><input type="checkbox"> Task</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Toggle between dark and light themes
+        document.querySelector('.theme-toggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            document.body.classList.toggle('light-theme');
+        });
+    </script>
+</body>
+</html>
