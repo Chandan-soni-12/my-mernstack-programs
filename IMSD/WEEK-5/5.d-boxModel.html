@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understanding CSS Box Model</title>
+  <style>
+    body {
+      background-color: #e9f5ff;
+      font-family: Verdana, sans-serif;
+    }
+    .demo-box {
+      width: 350px;
+      height: 160px;
+      background-color: #fff8dc;       /* Content area */
+      padding: 25px;                   /* Inner spacing */
+      border: 4px dashed #ff8c00;      /* Border around padding */
+      margin: 40px auto;               /* Outer spacing */
+      text-align: center;
+      font-size: 17px;
+      box-sizing: border-box;          /* Includes padding & border in total size */
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Box Model Illustration</h2>
+  <div class="demo-box">
+    <strong>Content:</strong> Visible area for text.<br>
+    <strong>Padding:</strong> Space between border and content.<br>
+    <strong>Border:</strong> Outlines the element.<br>
+    <strong>Margin:</strong> Space outside the box.
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Various CSS Selectors</title>
+  <style>
+    /* I. Simple Selectors */
+    h1 { color: navy; }                            /* Element selector */
+    #title { border-bottom: 2px solid blue; }      /* ID selector */
+    .note { background-color: #fffa9e; }           /* Class selector */
+    h2, p, li { font-family: Verdana, Geneva, sans-serif; } /* Group selector */
+    * { margin: 6px; }                             /* Universal selector */
+    /* II. Combinator Selectors */
+    section p { color: darkgreen; }                /* Descendant selector */
+    ol > li { font-weight: 600; }                  /* Child selector */
+    h4 + p { color: crimson; }                     /* Adjacent sibling */
+    h4 ~ p { text-decoration: underline; }         /* General sibling */
+    /* III. Pseudo-class Selectors */
+    a:hover { color: darkorange; }                 /* Hover effect */
+    li:first-child { color: indigo; }              /* First child */
+    li:nth-child(3) { color: seagreen; }           /* Specific child */
+    /* IV. Pseudo-element Selectors */
+    p::first-letter { font-size: 1.5em; color: brown; } /* First letter */
+    p::before { content: "💡 "; color: gray; }          /* Before content */
+    p::after { content: " ✔"; color: green; }           /* After content */
+    /* V. Attribute Selectors */
+    input[type="email"] { border: 2px dashed purple; }
+    a[href$=".com"] { font-style: italic; }
+    input[placeholder^="Your"] { background-color: #e6f7ff; }
+  </style>
+</head>
+<body>
+  <!-- Simple Selectors -->
+  <h1 id="title">CSS Selectors Demonstration</h1>
+  <h2 class="note">Highlighted Subheading Example</h2>
+  <!-- Combinator Selectors -->
+  <section>
+    <p>This paragraph is inside a section (descendant selector).</p>
+  </section>
+  <ol>
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+  </ol>
+  <h4>Subheading with Sibling Paragraphs</h4>
+  <p>This is directly after h4 (adjacent sibling).</p>
+  <p>This is another paragraph related to h4 (general sibling).</p>
+  <!-- Pseudo-class -->
+  <a href="https://www.example.com">Visit Example</a>
+  <!-- Pseudo-element -->
+  <p>This text shows pseudo-elements in action.</p>
+  <!-- Attribute Selectors -->
+  <form>
+    <input type="text" placeholder="Your full name">
+    <input type="email" placeholder="Your outlook ID">
+  </form>
+</body>
+</html>

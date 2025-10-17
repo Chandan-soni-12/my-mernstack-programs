@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Advanced Student Registration Form</title>
+</head>
+<body>
+<h2 align="center">Advanced Student Registration Form</h2>
+<form action="#" method="post" enctype="multipart/form-data">
+<table border="1" cellpadding="10" cellspacing="0" align="center">
+<caption><strong>Student Information</strong></caption>
+<tr>
+<th>Full Name:</th>
+<td><input type="text" name="fullname" placeholder="Enter your full name" required></td>
+</tr>
+<tr>
+<th>Email:</th>
+<td><input type="email" name="email" placeholder="student@college.edu" required></td>
+</tr>
+<tr>
+<th>Password:</th>
+<td><input type="password" name="password" required></td>
+</tr>
+<tr>
+<th>Mobile Number:</th>
+<td><input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required></td>
+</tr>
+<tr>
+<th>Age:</th>
+<td><input type="number" name="age" min="18" max="35"></td>
+</tr>
+<tr>
+<th>Date of Birth:</th>
+<td><input type="date" name="dob"></td>
+</tr>
+<tr>
+<th>Gender:</th>
+<td><input type="radio" name="gender" value="Male"> Male <input type="radio" name="gender" value="Female"> Female <input type="radio" name="gender" value="Other"> Other</td>
+</tr>
+<tr>
+<th>Courses Interested:</th>
+<td><input type="checkbox" name="course" value="HTML"> HTML <input type="checkbox" name="course" value="CSS"> CSS <input type="checkbox" name="course" value="JavaScript"> JavaScript <input type="checkbox" name="course" value="Python"> Python <input type="checkbox" name="course" value="AI"> Artificial Intelligence</td>
+</tr>
+<tr>
+<th>Branch:</th>
+<td><select name="branch"><option value="">--Select Branch--</option><option value="AIML">AI & ML</option><option value="CSE">Computer Science</option><option value="IT">Information Technology</option><option value="ME">Mechanical</option><option value="CE">Civil</option></select></td>
+</tr>
+<tr>
+<th>College Website:</th>
+<td><input type="url" name="website" placeholder="https://www.college.edu"></td>
+</tr>
+<tr>
+<th>Address:</th>
+<td><textarea name="address" rows="4" cols="30" placeholder="Enter your address here"></textarea></td>
+</tr>
+<tr>
+<th>Upload Photo:</th>
+<td><input type="file" name="photo"></td>
+</tr>
+<tr>
+<th>Preferred Interview Time:</th>
+<td><input type="time" name="timeslot"></td>
+</tr>
+<tr>
+<th>Skill Level (1-10):</th>
+<td><input type="range" name="skill" min="1" max="10"></td>
+</tr>
+<tr>
+<th>Favorite Theme Color:</th>
+<td><input type="color" name="color"></td>
+</tr>
+<tr>
+<td colspan="2"><input type="hidden" name="registration_type" value="student_form"></td>
+</tr>
+<tr>
+<th colspan="2" align="center"><input type="submit" value="Register"> <input type="reset" value="Clear"></th>
+</tr>
+</table>
+</form>
+</body>
+</html>

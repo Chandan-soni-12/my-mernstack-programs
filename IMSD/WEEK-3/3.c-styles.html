@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Styles Demo</title>
+  <!-- Internal CSS -->
+  <style>
+    .internal-box {
+      background-color: lightyellow;
+      border: 2px dashed black; 
+      padding: 15px; 
+    }
+  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" type="text/css" href="3.c-style.css">
+</head>
+<body>
+
+  <h1 style="color: darkred; font-size: 32px;">Inline Styled Heading (h1)</h1> <!-- Changed color and size -->
+  <div class="internal-box">
+    This box uses <strong>internal CSS</strong> for styling.<br>
+  </div>
+  <br>
+    <h2>Internal Styled Heading (h2)</h2>
+  <p class="external-paragraph">
+    This paragraph is styled using <strong>external CSS</strong>.
+  </p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fixed and Tilted Background Example</title>
+  <style>
+    body {
+      margin: 0;
+      height: 230vh; /* Scroll effect */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    .bg-box {
+      position: fixed;
+      top: 30%;
+      left: 0;
+      width: 100%;
+      height: 280px;
+      background-image: url('https://picsum.photos/id/1015/800/500');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: scaleX(1) rotate(-12deg); /* Tilted background */
+      opacity: 0.8;
+      z-index: -2;
+    }
+
+    .page-content {
+      padding: 70px;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .vertical-text {
+      writing-mode: vertical-rl;
+      text-orientation: sideways;
+      font-weight: 900;
+      color: #4B0082; /* Indigo */
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-box"></div>
+  <div class="page-content">
+    <h1 class="vertical-text">Discover</h1>
+    <p>This example features a fixed tilted background image that remains static during scrolling.</p>
+    <p>The background uses <strong>rotate()</strong> with a negative value and no mirroring to create a tilted effect.</p>
+    <p>Using fixed positioning keeps the image anchored in place as the content moves over it, preserving visual interest.</p>
+  </div>
+</body>
+</html>

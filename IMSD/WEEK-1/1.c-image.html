@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Profile Hyperlink Showcase</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: "Poppins", Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            color: #003049;
+        }
+        h1 {
+            color: #0077b6;
+            text-decoration: underline;
+        }
+        img {
+            border-radius: 50%;
+            border: 3px solid #0077b6;
+            margin: 20px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1);
+            border-color: #ff6f00;
+        }
+        p {
+            font-size: 16px;
+            color: #023047;
+        }
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .profile {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Profile and My Friend's Profile</h1>
+    <div class="profile-container">
+        <!-- Your Profile -->
+        <div class="profile">
+            <a href="https://www.linkedin.com/in/" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2022/03/27/11/23/cat-7094808_1280.jpg" alt="My Profile Photo" width="120" height="120">
+            </a>
+            <p>Click my image to visit my LinkedIn profile</p>
+        </div>
+        <!-- Friend's Profile -->
+        <div class="profile">
+            <a href="https://www.linkedin.com/in/" target="_blank">
+             <img src="https://cdn.pixabay.com/photo/2023/12/15/21/47/cat-8451431_1280.jpg" alt="Friend's Profile Photo" width="120" height="120">
+            </a>
+            <p>Click my friend’s image to visit their profile</p>
+        </div>
+    </div>
+</body>
+</html>

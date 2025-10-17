@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Output Methods Example</title>
+  <script>
+    // 1. Using alert()
+    function showAlert() {
+      alert("Notice: This message is displayed via alert().");
+    }
+
+    // 2. Using console.log()
+    function printToConsole() {
+      console.log("Logging to console: This is a console log message.");
+    }
+
+    // 3. Using a safe alternative to document.write()
+    function outputDocumentWrite() {
+      // Instead of document.write(), we'll safely display it inside a div
+      document.getElementById("docWriteOutput").innerHTML =
+        "<h3 style='color:blue;'>This text is output by document.write() (simulated safely)</h3>";
+    }
+
+    // 4. Using innerHTML
+    function updateInnerHTML() {
+      document.getElementById("outputArea").innerHTML =
+        "Text updated inside a div using innerHTML.";
+    }
+  </script>
+</head>
+<body>
+  <h2>Different JavaScript Output Methods</h2>
+
+  <button onclick="showAlert()">Show Alert Message</button><br><br>
+  <button onclick="printToConsole()">Print to Console</button><br><br>
+  <button onclick="outputDocumentWrite()">Write to Document (Safe)</button><br><br>
+  <button onclick="updateInnerHTML()">Update Inner HTML</button><br><br>
+
+  <div id="docWriteOutput" style="margin-top:10px;"></div>
+  <div id="outputArea" style="color: navy; font-weight: bold; margin-top:10px;"></div>
+</body>
+</html>

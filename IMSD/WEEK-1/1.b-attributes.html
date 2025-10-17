@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exploring Hyperlinks in HTML</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f9ff;
+            color: #333;
+            margin: 40px;
+        }
+        h1 {
+            text-align: center;
+            color: #004b8d;
+            text-decoration: underline;
+        }
+        h2 {
+            color: #006d77;
+            margin-top: 30px;
+        }
+        a {
+            color: #0077b6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ff6700;
+            text-decoration: underline;
+        }
+        img {
+            border: 2px solid #004b8d;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        img:hover {
+           transform: scale(1.1);
+      }
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exploring Hyperlinks in HTML</h1>
+    <!-- Text Link -->
+    <h2>Text Hyperlink Example</h2>
+    <p>
+        Explore the world of web development at 
+        <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>.
+        This site provides tutorials and resources for developers.
+    </p>
+    <!-- Image Link -->
+    <h2>Image Hyperlink Example</h2>
+    <p>Click the image to visit the W3Schools HTML tutorial:</p>
+    <a href="https://www.w3schools.com/html/" target="_blank">
+<img src="https://static.vecteezy.com/system/resources/previews/001/416/705/original/html5-emblem-orange-shield-and-white-text-vector.jpg" alt="HTML Logo" width="100" height="100">
+    </a>
+    <!-- Email Link -->
+    <h2>Email Hyperlink Example</h2>
+    <p>
+        Have questions? Contact us at 
+        <a href="mailto:info@example.com">info@example.com</a>.
+    </p>
+    <!-- Internal Page Link -->
+    <h2>Internal Hyperlink Example</h2>
+    <p>
+        Go back to the <a href="#top">top of the page</a>.
+    </p>
+</body>
+</html>
